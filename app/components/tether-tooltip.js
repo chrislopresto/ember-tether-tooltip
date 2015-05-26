@@ -1,0 +1,1 @@
+export { default } from 'ember-tether-tooltip/components/tether-tooltip';

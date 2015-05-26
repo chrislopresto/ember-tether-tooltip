@@ -1,0 +1,48 @@
+@import "ember-tether-tooltip/ember-tether-tooltip-appearance";
+
+body {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+}
+
+.tether-target {
+  background-color: lime;
+  height: 30px;
+  width: 200px;
+  border: dotted 1px white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 50px auto;
+}
+
+.ember-tether {
+  height: 150px;
+  width: 150px;
+  background-color: orange;
+  border: dotted 3px blue;
+  display: block;
+}
+
+.ember-tether-enabled {
+  border: solid 5px magenta;
+}
+
+.scroll-box {
+  margin: 20px 0;
+  padding: 200px;
+  background-color: gray;
+  border: solid 5px yellow;
+  height: 200px;
+  overflow: scroll;
+}
+
+.demo {
+  margin: 5px 0;
+  background-color: lightgray;
+  border: solid 1px cyan;
+  padding: 10px;
+}
+
+.highlight {
+  font-weight: bold;
+}

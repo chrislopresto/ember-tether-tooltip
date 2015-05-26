@@ -1,3 +1,37 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<h2 id="title">Ember Tether Tooltip</h2>
+<p>
+  Ember Tether Tooltip is...
+</p>
 
-{{outlet}}
+<div class='demo'>
+  <button {{action 'switchTarget'}}>Switch Target</button>
+  Switch the tooltip target.
+  Target is square <span class='highlight'>{{exampleTarget}}</span>
+</div>
+<div class='demo'>
+  <button {{action 'rotateTooltip'}}>Position Tooltip</button>
+  Rotate tooltip around square 3. (Hover to see)
+  position: <span class=highlight>{{examplePosition}}</span>
+</div>
+
+<div class='scroll-box'>
+  <div id='tether-target-1' class='tether-target'>1</div>
+  <div id='tether-target-2' class='tether-target'>2</div>
+  <div id='tether-target-3' class='tether-target'>3</div>
+
+  {{#tether-tooltip
+      target=exampleTargetSelector
+      position='top left'
+  }}
+    <h1>Tooltip Headline</h1>
+    <h2>Any HTML will do</h2>
+    <p>Hey look... I'm a tooltip</p>
+  {{/tether-tooltip}}
+
+  {{tether-tooltip
+      target='#tether-target-3'
+      position=examplePosition
+      content='Tooltip from attr'
+  }}
+
+</div>

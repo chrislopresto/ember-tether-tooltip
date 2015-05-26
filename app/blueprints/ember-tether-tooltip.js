@@ -1,0 +1,1 @@
+export { default } from 'ember-tether-tooltip/blueprints/ember-tether-tooltip';
